@@ -22,7 +22,7 @@ namespace Employee_Management_System.models
         public string? Email { get; set; }
 
         [MaxLength(10)]
-        public int? Mobile { get; set; }
+        public string? Mobile { get; set; }
 
     }
 }

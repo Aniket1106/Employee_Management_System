@@ -13,9 +13,10 @@ namespace Employee_Management_System.models
             {
             }
             public virtual DbSet<Emp_Details> Emp_Details { get; set; }
-           // public virtual DbSet<Emp_Salary_Detailscs> Emp_Salary_Detailscs { get; set; }
+        public virtual DbSet<Emp_Salary_Details> Emp_Salary_Details { get; set; }
+        // public virtual DbSet<Emp_Salary_Detailscs> Emp_Salary_Detailscs { get; set; }
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
                 modelBuilder.Entity<Emp_Details>(entity => 
                 {
@@ -35,7 +36,7 @@ namespace Employee_Management_System.models
                 });
 
 
-            modelBuilder.Entity<Emp_Salary_Detailscs>(entity =>
+            modelBuilder.Entity<Emp_Salary_Details>(entity =>
             {
                 entity.HasKey(k => k.Employee_ID).HasName("PK_EmpSalary");
 
