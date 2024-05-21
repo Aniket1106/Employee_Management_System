@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { NavbarComponent } from './landing-page/navbar/navbar.component';
-import { HomePageComponent } from './landing-page/home_page/home-page/home-page.component';
+import { HomePageComponent } from './landing-page/home-page/home-page.component';
 
 @NgModule({
   declarations: [
