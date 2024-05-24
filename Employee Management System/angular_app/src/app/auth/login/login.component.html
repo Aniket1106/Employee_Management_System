@@ -1,61 +1,43 @@
-<section class="login-block">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <form class="md-float-material form-material" action="#" method="POST">
-                    <div class="auth-box card">
-                        <div class="card-block">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h1 class="text-center heading" >Employee Management System</h1>
-                                    
-                                </div>
-                            </div>
-                            <div class="form-group form-primary">
-                             
-                                 <input type="text" class="form-control" name="first_name" value="" placeholder="Display name" id="first_name"> 
-                            </div>
-
-                            <div class="form-group form-primary">
-                                <input type="text" class="form-control" name="email" value="" placeholder="Email" id="email">
-                               
-                            </div>
-
-                            <div class="form-group form-primary">
-                               <input type="password" class="form-control" name="password" placeholder="Password" value="" id="password">
-                              
-                            </div>
-
-                            <div class="form-group form-primary">
-                                <input type="password" class="form-control" name="password_confirm" placeholder="Repeat password" value="" id="password_confirm">
-                                
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <button type="submit" (click)="Signup()" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Signup Now">Sign-up</button>
-        
-                                </div>
-                            </div>
-
-                            <div class="or-container"><div class="line-separator"></div> <div class="or-label">or</div><div class="line-separator"></div></div>
-
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                  <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Signup Using Google</a>
-
-                                </div>
-                            </div>
-                            <br>
-
-                            <p class="text-inverse text-center">Already have an account? <a href="<?= base_url() ?>auth/login" data-abc="true">Login</a></p>
-                        </div>
-                    </div>
-                </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./login.component.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form class="signup-form">
+            <h1>Sign up</h1>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="social-login">
+                <a class="google-btn">
+                    <img src="/assets/Images/google-icon.png" alt="Google" class="social-icon">
+                </a>
+                <a class="twitter-btn">
+                    <img src="/assets/Images/twitter-icon.png" alt="Twitter" class="social-icon">
+                </a>
+                <a class="github-btn">
+                    <img src="/assets/Images/github-icon.png" alt="GitHub" class="social-icon">
+                </a>
             </div>
-        </div>
+            
+            <p class="continue-with">Or continue with</p>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Create account</button>
+        </form>
     </div>
-</section>
+</body>
+</html>

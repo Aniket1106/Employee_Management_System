@@ -1,85 +1,58 @@
-<section class=" slider_section ">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
-                    Employee Management <br>
-                    <span>
-                      Our Responsibility
-                    </span>
-                  </h1>
-                  <p>
-                    Enhance Productivity for Employee Management System
-                    With Pocket Emp Get Advanced Tools For Employee Management And Inspire The Best Performance In Your Staff.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Start free trial</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
-                    Employee Management <br>
-                    <span>
-                      Our Responsibility
-                    </span>
-                  </h1>
-                  <p>
-                    Enhance Productivity for Employee Management System
-                    With Pocket Emp Get Advanced Tools For Employee Management And Inspire The Best Performance In Your Staff.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Start free trial</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="detail-box">
-                  <h1>
-                    Employee Management <br>
-                    <span>
-                      Our Responsibility
-                    </span>
-                  </h1>
-                  <p>
-                    Enhance Productivity for Employee Management System
-                    With Pocket Emp Get Advanced Tools For Employee Management And Inspire The Best Performance In Your Staff.
-                  </p>
-                  <div class="btn-box">
-                    <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Start free trial</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container idicator_container">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="home-page.component.css">
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Employee ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTable">
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="icons">
+                        <img src="assets\Images\add-icon.png" alt="Add Icon" class="icon">
+                        <img src="assets\Images\pencil-icon.png" alt="Edit Icon" class="icon">
+                        <img src="assets\Images\delete-icon.png" alt="Delete Icon" class="icon">
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </section>
+
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <p>This is an employee directory application. You can add, update, or delete employee records.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
